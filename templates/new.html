@@ -1,0 +1,56 @@
+{% extends "application.html" %}
+{% block content %}
+<div class = "content">
+  <a href="/">トップページ</a>
+  <form method="POST" action="/show">
+    <div>
+      <h3>あなたの性格は？</h3>
+      <input type="checkbox" id="char1" value ="情熱" name="character">
+      <label for="character">情熱的</label>
+      <input type="checkbox" id="char2" value ="冷静" name="character">
+      <label for="character">冷静</label>
+      <input type="checkbox" id="char3" value ="メンヘラ" name="character">
+      <label for="character">メンヘラ</label>
+      <input type="checkbox" id="char4" value ="人見知り" name="character">
+      <label for="character">人見知り</label>
+      <input type="checkbox" id="char5" value ="平凡" name="character">
+      <label for="character">平凡</label>
+      <input type="checkbox" id="char6" value ="奇妙" name="character">
+      <label for="character">奇妙</label>
+      <input type="checkbox" id="char7" value ="愉快" name="character">
+      <label for="character">愉快</label>
+      <input type="checkbox" id="char8" value ="利己" name="character">
+      <label for="character">利己的</label>
+      <input type="checkbox" id="char9" value ="斬新" name="character">
+      <label for="character">斬新</label>
+      <input type="checkbox" id="char10" value ="危険" name="character">
+      <label for="character">危険</label>
+    </div>
+
+    <div>
+      <h3>ファッションに対するイメージは？</h3>
+      <input type="checkbox" id="ideal1" value ="簡単" name="ideal">
+      <label for="ideal">簡単</label>
+      <input type="checkbox" id="ideal2" value ="難しい" name="ideal">
+      <label for="ideal">難しい</label>
+      <input type="checkbox" id="ideal3" value ="便利" name="ideal">
+      <label for="ideal">便利</label>
+      <input type="checkbox" id="idea4l" value ="楽しい" name="ideal">
+      <label for="ideal">楽しい</label>
+      <input type="checkbox" id="ideal5" value ="最新" name="ideal">
+      <label for="ideal">最新</label>
+      <input type="checkbox" id="ideal6" value ="偉大" name="ideal">
+      <label for="ideal">偉大</label>
+      <input type="checkbox" id="ideal7" value ="貧弱" name="ideal">
+      <label for="ideal">貧弱</label>
+      <input type="checkbox" id="ideal8" value ="危険" name="ideal">
+      <label for="ideal">危険</label>
+      <input type="checkbox" id="ideal9" value ="単純" name="ideal">
+      <label for="ideal">単純</label>
+      <input type="checkbox" id="ideal10" value ="苦痛" name="ideal">
+      <label for="ideal">苦痛</label>
+    </div>
+    <button type="submit" value="診断">診断</button>
+  </form>
+</div>
+{% endblock %}
